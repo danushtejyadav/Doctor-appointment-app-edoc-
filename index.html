@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animations.css">  
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/index.css">
+    <title>eDoc</title>
+    <style>
+        table{
+            animation: transitionIn-Y-bottom 0.5s;
+        }
+    </style>
+    <style>
+        /* Styles for the floating chatbot icon */
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            width: 60px; /* Adjust as needed */
+            height: 60px; /* Adjust as needed */
+            background-color: #007bff; /* Adjust as needed */
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it appears above other content */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+        }
+    
+        /* Styles for the chatbot icon image */
+        #chatbot-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    </style>
+        
+</head>
+<body>
+
+    <!-- Floating chatbot icon -->
+<div id="chatbot-icon" onclick="openChatbot()">
+    <img src="img/icons/icon.png" alt="Chatbot Icon"> <!-- Replace icon.png with your icon image -->
+</div>
+
+<script>
+    // Function to open the specified link in a new tab
+    function openChatbot() {
+        window.open('https://mediafiles.botpress.cloud/f0570150-d122-41d9-80f7-faf5342de604/webchat/bot.html', '_blank');
+    }
+</script>
+    <div class="full-height">
+        <center>
+        <table border="0">
+            <tr>
+                <td width="80%">
+                    <font class="edoc-logo">e-Doctor. </font>
+                    <font class="edoc-logo-sub">| THE ECHANNELING PROJECT</font>
+                </td>
+                <td width="10%">
+                   <a href="login.php"  class="non-style-link"><p class="nav-item">LOGIN</p></a>
+                </td>
+                <td  width="10%">
+                    <a href="signup.php" class="non-style-link"><p class="nav-item" style="padding-right: 10px;">REGISTER</p></a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td  colspan="3">
+                    <p class="heading-text">Avoid Hassles & Delays.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="3">
+                    <p class="sub-text2">How is health today, Sounds like not good!<br>Don't worry. Find your doctor online Book as you wish with eDoc. <br>
+                    We offer you a free doctor channeling service, Make your appointment now.</p>
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="3">
+                    <center>
+                    <a href="login.php" >
+                        <input type="button" value="Make Appointment" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px;">
+                    </a>
+                </center>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                   
+                </td>
+            </tr>
+        </table>
+
+        <p class="sub-text2 footer-hashen">A Web Solution by Danush and Shreejan.</p>
+    </center>
+    
+    </div>
+</body>
+</html>
